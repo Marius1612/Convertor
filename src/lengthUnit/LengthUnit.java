@@ -24,8 +24,7 @@ public enum LengthUnit {
         return length * conversionFactor;
     }
 
-    public float toCentimerter(float length)
-    {
+    public float toCentimerter(float length) {
         return length * 100f * conversionFactor;
     }
 }
