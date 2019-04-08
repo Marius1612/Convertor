@@ -4,16 +4,13 @@ public enum LengthUnit {
 
     METER(1),
 
-    INCH(0.025f),
-
-    CENTIMETER(0.01f),
-
-    FOOT(0.3f),
-
+    CM(0.01f),
 
     KM(1000),
 
-    DM(0.1f);
+    DM(0.1f),
+
+    MM(0.001f);
 
     private float conversionFactor;
 
@@ -25,7 +22,12 @@ public enum LengthUnit {
         return length * conversionFactor;
     }
 
-    public float toCentimerter(float length) {
-        return length * 100f * conversionFactor;
+    public float toCentimeter(float length) {
+        return length * 100 * conversionFactor;
     }
+
+    public float toDecimeter(float length){return length*10*conversionFactor;}
+
+    public float toMilimeter(float length){return length*1000*conversionFactor;}
+
 }
