@@ -31,4 +31,3 @@ public interface LengthUnitTest {
         System.out.println(length + " " + lengthUnit + " = " + conversion + "CM");
     }
 }
-
